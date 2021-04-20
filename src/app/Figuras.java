@@ -9,6 +9,7 @@ import java.awt.Graphics;
 import java.util.ArrayList;
 import javafx.scene.shape.Circle;
 import javax.swing.JPanel;
+import java.math.*;
 
 /**
  *
@@ -25,12 +26,12 @@ public class Figuras {
 
     public float area() {
         return 0;
-        //a * b;
+        //a * b; cuadrado
     }
 
     public float perimetro() {
         return 0;
-        //2 * (a + b);
+        //2 * (a + b); cuadrado
     }
 
     public void draw(Graphics a) {

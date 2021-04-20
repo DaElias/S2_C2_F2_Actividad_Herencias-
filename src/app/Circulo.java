@@ -5,22 +5,36 @@
  */
 package app;
 
+import java.awt.Graphics;
+
 /**
  *
  * @author iTzSumer
  */
 public class Circulo extends Figuras {
 
-    
-    
-    public Circulo() {
-        
+    public Circulo(int r, Puntos x) {
+        this.altura = r; //radio
+        this.ancho = 0;
+        this.Pinicial = x;
     }
 
     @Override
     public float area() {
-        return super.area(); //To change body of generated methods, choose Tools | Templates.
-        
+        super.area(); //To change body of generated methods, choose Tools | Templates.
+        return (float) (altura * 3.14159265359 * altura);
+    }
+
+    @Override
+    public float perimetro() {
+        super.perimetro(); //To change body of generated methods, choose Tools | Templates.
+        return (float) (2 * altura * 3.14159265359);
+    }
+
+    @Override
+    public void draw(Graphics a) {
+        super.draw(a); //To change body of generated methods, choose Tools | Templates.
+        a.drawOval(Pinicial.getX(),Pinicial.getY(),altura,altura);
     }
     
     
