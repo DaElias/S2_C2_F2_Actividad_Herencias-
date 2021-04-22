@@ -19,12 +19,12 @@ public class Ventana extends javax.swing.JFrame {
 
     ArrayList<Figuras> figuras = new ArrayList<>();
 
+    
     /**
      * Creates new form Ventana
      */
     public Ventana() {
         initComponents();
-
     }
 
     /**
